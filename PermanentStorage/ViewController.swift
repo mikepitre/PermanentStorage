@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         
         NSUserDefaults.standardUserDefaults().setObject("Mike", forKey: "name")
         
-        let userName = NSUserDefaults.standardUserDefaults().objectForKey("name")!
+        let userName = NSUserDefaults.standardUserDefaults().objectForKey("name")! as! String
         
         print(userName)
         
